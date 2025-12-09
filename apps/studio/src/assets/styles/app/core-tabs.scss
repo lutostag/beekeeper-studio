@@ -76,6 +76,10 @@
     &.tabbar--scrollable {
       overflow-x: auto;
       overflow-y: hidden;
+      white-space: nowrap;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     .nav-item-wrap {
