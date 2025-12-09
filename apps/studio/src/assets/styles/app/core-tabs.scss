@@ -71,8 +71,7 @@
     -webkit-app-region: no-drag;
 
     // Enable horizontal scrolling when configured
-    // See https://docs.beekeeperstudio.io/user_guide/configuration/#ui-layout
-    // Config: [ui.layout] scrollTabs = true
+    // [ui.layout] scrollTabs = true
     &.tabbar--scrollable {
       overflow-x: auto;
       overflow-y: hidden;
