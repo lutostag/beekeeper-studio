@@ -294,14 +294,6 @@
 </template>
 
 <script lang="ts">
-/**
- * CoreTabs component - Main tab management interface for Beekeeper Studio
- * 
- * Features:
- * - Tab scrolling: Configure horizontal tab bar scrolling via config file
- *   Set [ui.layout] scrollTabs = true in your config file
- *   See: https://docs.beekeeperstudio.io/user_guide/configuration/
- */
 
 import _ from 'lodash'
 
