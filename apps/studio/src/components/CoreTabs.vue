@@ -9,7 +9,7 @@
         :options="dragOptions"
         v-model="tabItems"
         tag="ul"
-        class="nav-tabs nav"
+        :class="['nav-tabs', 'nav', { 'tabbar--scrollable': $bksConfig.ui.layout.scrollTabs }]"
         chosen-class="nav-item-wrap-chosen"
       >
         <core-tab-header

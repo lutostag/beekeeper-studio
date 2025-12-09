@@ -295,6 +295,7 @@ declare interface IBksConfig {
             primarySidebarMinWidth: number;
             secondarySidebarMaxWidth: number;
             secondarySidebarMinWidth: number;
+            scrollTabs: boolean;
         };
         queryEditor: {
             maxResults: number;

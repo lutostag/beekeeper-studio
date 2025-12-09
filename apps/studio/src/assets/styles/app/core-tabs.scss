@@ -69,6 +69,15 @@
     margin: 0;
     height: $tab-height;
     -webkit-app-region: no-drag;
+
+    // Enable horizontal scrolling when configured
+    // See https://docs.beekeeperstudio.io/user_guide/configuration/#ui-layout
+    // Config: [ui.layout] scrollTabs = true
+    &.tabbar--scrollable {
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+
     .nav-item-wrap {
       min-width: 28px;
       overflow: hidden;
