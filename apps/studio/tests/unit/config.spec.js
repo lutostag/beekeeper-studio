@@ -401,4 +401,26 @@ quoted[] = '@'
 
     expect(processedConfig).toMatchObject(expected);
   })
+
+  it("should parse ui.layout.scrollTabs config correctly", () => {
+    const rawConfig = parseIni(`
+[ui.layout]
+scrollTabs = true
+    `);
+
+    const processedConfig = processRawConfig(rawConfig);
+
+    expect(processedConfig.ui.layout.scrollTabs).toBe(true);
+  });
+
+  it("should default scrollTabs to false when not specified", () => {
+    const rawConfig = parseIni(`
+[ui.layout]
+mainContentMinWidth = 200
+    `);
+
+    const processedConfig = processRawConfig(rawConfig);
+
+    expect(processedConfig.ui?.layout?.scrollTabs).toBeUndefined();
+  });
 });
